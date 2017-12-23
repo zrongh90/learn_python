@@ -1,0 +1,4 @@
+Hello stream world
+Enter a nmber>4  squared is   16
+Enter a nmber>8  squared is   64
+Enter a nmber>Bye
