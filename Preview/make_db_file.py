@@ -4,6 +4,7 @@ ENDREC = 'endrec.'
 RECSEP = '=>'
 
 def storeDbase(db, db_file_name=dbfilename):
+    # test
     fn = open(db_file_name, 'w')
     for key in db:
         print(key, file = fn)
