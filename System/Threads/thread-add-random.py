@@ -1,0 +1,22 @@
+import threading
+import time
+count = 0
+
+
+def counter():
+    global count
+    count = count + 1
+    time.sleep(0.5)
+    count = count + 1
+
+
+threads = []
+for i in range(100):
+    thread = threading.Thread(target=counter, args=())
+    thread.start()
+    threads.append(thread)
+
+for thread in threads:
+    thread.join()
+
+print(count)
